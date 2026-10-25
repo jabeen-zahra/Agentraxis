@@ -1,10 +1,14 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/AGENTRAXIS-AI--Agent%20Security%20Platform-0B0F19?style=for-the-badge&logo=shieldsdotio&logoColor=white" height="45"/>
+<img src="https://img.shields.io/badge/AGENTRAXIS-7C3AED?style=for-the-badge&logoColor=white" height="80"/>
 
-### AI-Agent Security Testing & Defense Platform
+<br/>
 
-*A controlled sandbox for demonstrating AI-agent security risks — and proving that backend-enforced authorization can stop them.*
+<img src="https://img.shields.io/badge/AI--AGENT%20SECURITY%20TESTING%20%26%20DEFENSE%20PLATFORM-0B0F19?style=for-the-badge&color=0B0F19&labelColor=0B0F19" height="26"/>
+
+<br/><br/>
+
+*A controlled sandbox for demonstrating AI-agent security risks, and proving that backend-enforced authorization can stop them.*
 
 <br/>
 
@@ -33,19 +37,19 @@
 
 ---
 
-## About
+## <img src="https://img.shields.io/badge/-6366F1?style=flat-square&logo=aboutdotme&logoColor=white" height="22"/>&nbsp; About
 
-**Agentraxis** *(agent + praxis — putting theory into practice)* is a controlled, educational platform for simulating selected AI-agent security risks and evaluating defensive controls against them.
+**Agentraxis** *(agent + praxis, putting theory into practice)* is a controlled, educational platform for simulating selected AI-agent security risks and evaluating defensive controls against them.
 
-From a single dashboard, you pick one of three predefined attack scenarios and run it against simulated agents and mock tools — once in **vulnerable mode**, once in **protected mode** — then compare real, stored results between the two.
+From a single dashboard, you pick one of three predefined attack scenarios and run it against simulated agents and mock tools, once in **vulnerable mode**, once in **protected mode**, then compare real, stored results between the two.
 
 > All scenarios use synthetic data and mock tools only. Agentraxis never touches real systems, real credentials, or a paid AI API.
 
 <br/>
 
-## Why Agentraxis
+## <img src="https://img.shields.io/badge/-F59E0B?style=flat-square&logo=target&logoColor=white" height="22"/>&nbsp; Why Agentraxis
 
-AI agents are increasingly trusted with tools, data, and the ability to call *other* agents — and that trust surface introduces risks that don't look like classic application vulnerabilities:
+AI agents are increasingly trusted with tools, data, and the ability to call *other* agents, and that trust surface introduces risks that don't look like classic application vulnerabilities:
 
 | Problem | What usually goes wrong |
 |---|---|
@@ -53,11 +57,11 @@ AI agents are increasingly trusted with tools, data, and the ability to call *ot
 | **Excessive permissions** | An agent is allowed to do more than its role actually needs |
 | **Unsafe delegation** | One agent blindly trusts a request forwarded by another agent |
 
-Agentraxis makes these risks *visible, reproducible, and measurable* in a safe classroom-scale environment — proving, with real audit data, that independent backend authorization (not an agent's own judgment) is what actually stops them.
+Agentraxis makes these risks visible, reproducible, and measurable in a safe classroom-scale environment, proving with real audit data that independent backend authorization, not an agent's own judgment, is what actually stops them.
 
 <br/>
 
-## Core Concept
+## <img src="https://img.shields.io/badge/-8B5CF6?style=flat-square&logo=diagramsdotnet&logoColor=white" height="22"/>&nbsp; Core Concept
 
 <div align="center">
 
@@ -70,11 +74,11 @@ Agentraxis makes these risks *visible, reproducible, and measurable* in a safe c
 
 </div>
 
-Both modes run on the **same scenario, same inputs, same mock tools** — only the authorization logic differs, which is what makes the before/after comparison meaningful.
+Both modes run on the **same scenario, same inputs, same mock tools**; only the authorization logic differs, which is what makes the before/after comparison meaningful.
 
 <br/>
 
-## Threat Scenarios
+## <img src="https://img.shields.io/badge/-EF4444?style=flat-square&logo=hackthebox&logoColor=white" height="22"/>&nbsp; Threat Scenarios
 
 | # | Scenario | Risk Demonstrated | Control Demonstrated |
 |:-:|---|---|---|
@@ -84,28 +88,28 @@ Both modes run on the **same scenario, same inputs, same mock tools** — only t
 
 <br/>
 
-## Key Features
+## <img src="https://img.shields.io/badge/-10B981?style=flat-square&logo=checkmarx&logoColor=white" height="22"/>&nbsp; Key Features
 
-- **Scenario runner** — launch any scenario in either mode, no code changes
-- **Policy-enforced tool boundary** — identity, tool, action & resource validated before execution
-- **Deny-by-default, fail-closed design** — nothing unknown is ever implicitly trusted
-- **Full audit trail** — every decision logged with a reason and linked run
-- **Event monitor** — filterable by run, scenario, mode, outcome
-- **Metrics & comparison** — vulnerable vs. protected, calculated from real stored runs
-- **Policy viewer/editor** — inspect and tweak the demo security policies
-- **One-click reset** — restore seeded data & default policies
+- **Scenario runner** - launch any scenario in either mode, no code changes
+- **Policy-enforced tool boundary** - identity, tool, action & resource validated before execution
+- **Deny-by-default, fail-closed design** - nothing unknown is ever implicitly trusted
+- **Full audit trail** - every decision logged with a reason and linked run
+- **Event monitor** - filterable by run, scenario, mode, outcome
+- **Metrics & comparison** - vulnerable vs. protected, calculated from real stored runs
+- **Policy viewer/editor** - inspect and tweak the demo security policies
+- **One-click reset** - restore seeded data & default policies
 
 <br/>
 
-## Architecture
+## <img src="https://img.shields.io/badge/-0EA5E9?style=flat-square&logo=mermaid&logoColor=white" height="22"/>&nbsp; Architecture
 
 ```mermaid
 flowchart LR
-    subgraph Client["Frontend — React"]
+    subgraph Client["Frontend - React"]
         UI[Dashboard · Simulator · Policy Viewer · Event Monitor]
     end
 
-    subgraph Server["Backend — FastAPI"]
+    subgraph Server["Backend - FastAPI"]
         Runner[Scenario Runner]
         Policy{{"Policy Engine
 (Authorization)"}}
@@ -133,11 +137,11 @@ flowchart LR
     style Runner fill:#8b5cf6,stroke:#5b21b6,color:#fff
 ```
 
-> The **frontend never enforces authorization** — it only displays what the backend decided. Every protected-mode tool call is checked once, at the backend boundary, immediately before execution.
+> The **frontend never enforces authorization**, it only displays what the backend decided. Every protected-mode tool call is checked once, at the backend boundary, immediately before execution.
 
 <br/>
 
-## Tech Stack
+## <img src="https://img.shields.io/badge/-334155?style=flat-square&logo=stackshare&logoColor=white" height="22"/>&nbsp; Tech Stack
 
 <div align="center">
 
@@ -167,7 +171,7 @@ agentraxis/
 
 <br/>
 
-## Getting Started
+## <img src="https://img.shields.io/badge/-14B8A6?style=flat-square&logo=gnubash&logoColor=white" height="22"/>&nbsp; Getting Started
 
 ```bash
 # Clone
@@ -188,35 +192,35 @@ npm run dev
 
 <br/>
 
-## Security Boundaries
+## <img src="https://img.shields.io/badge/-F43F5E?style=flat-square&logo=letsencrypt&logoColor=white" height="22"/>&nbsp; Security Boundaries
 
 Agentraxis is a **teaching tool, not a penetration-testing framework**:
 
-- Every scenario is predefined — no free-form attack injection against real systems
+- Every scenario is predefined, no free-form attack injection against real systems
 - All records, documents, and tools are synthetic/mock
 - Vulnerable mode never disables OS-level protections or reaches real endpoints
 - No shell access, arbitrary code execution, or unrestricted filesystem tools
-- Passing these tests doesn't prove resistance to all prompt-injection techniques — results apply only to this prototype, these scenarios, this test data
+- Passing these tests doesn't prove resistance to all prompt-injection techniques; results apply only to this prototype, these scenarios, this test data
 
 <br/>
 
-## Documentation
+## <img src="https://img.shields.io/badge/-6366F1?style=flat-square&logo=readthedocs&logoColor=white" height="22"/>&nbsp; Documentation
 
-- [`docs/Agentraxis.pdf`](docs/Agentraxis_Project_Proposal.docx) — Agentraxis Project Proposal
+- [`docs/Agentraxis.pdf`](docs/Agentraxis.pdf) - Agentraxis Project Proposal
 
 <br/>
 
-## Team
+## <img src="https://img.shields.io/badge/-1E293B?style=flat-square&logo=github&logoColor=white" height="22"/>&nbsp; Team
 
 <div align="center">
 
 | Name | Roll No. |
 |---|:-:|
+| Jabeen Zahra | 23L-3065 |
 | Saim Arif Khan | 23L-3071 |
 | Abdul Muiz | 23L-3097 |
-| Jabeen Zahra | 23L-3065 |
 
-**Advisor:** Maam Sarah Abid Khan &nbsp;·&nbsp; **Course:** Information Security &nbsp;·&nbsp; **FAST-NUCES, Lahore**
+**Advisor:** Ms. Sarah Abid Khan &nbsp;·&nbsp; **Course:** Information Security &nbsp;·&nbsp; **FAST-NUCES, Lahore**
 
 </div>
 
